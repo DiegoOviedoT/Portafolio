@@ -1,14 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
-  <link rel="stylesheet" href="/src/css/main.css">
-  <script src="/src/js/main.js" defer></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script src="./src/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- <div class="loanding">
+    <div class="loanding__container">
+      <div class="loanding__container--img"></div>
+      <div class="loanding__container--text"></div>
+      <div class="loanding__container--animation">
+      </div>
+    </div>
+  </div> -->
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__menu--li">
+            <a class="navbar__menu--link" href="#">Home</a>
+          </li>
+          <li class="navbar__menu--li">
+            <a class="navbar__menu--link" href="#descrition">Descripción</a>
+          </li>
+          <li class="navbar__menu--li">
+            <a class="navbar__menu--link" href="#proyect">Proyectos</a>
+          </li>
+          <li class="navbar__menu--li">
+            <a class="navbar__menu--link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container gradient">
+      <div class="container__img">
+        <img src="./src/img/VECTOR DIEGO.svg" alt="" style="width: 30rem" />
+      </div>
+      <div class="container__text">
+        <span class="container__text--main">Golang | Back-End Developer</span>
+        <span class="container__text--secund">Developer Junior </span>
+        <div class="container__text--animation">
+          Know Me
+          <span class="container__text--animation--span"></span>
+          <span class="container__text--animation--span top-1"></span>
+        </div>
+      </div>
+      <img
+        src="./src/img/icono-go.png"
+        alt="icono de la mascota de Golang"
+        class="icono__golang"
+      />
+    </section>
+
+    <section class="container black" id="descrition">
+      <div class="description__main">
+        <h2 class="description__main--title">Descripción</h2>
+        <p class="description__main--text">
+          Ingeniero y desarrollador de software con experiencia en desarrollo de
+          aplicaciones web y back-end, con formación Universitaria en ingenieria
+          de sistemas, apacionado por las nuevas tecnologías y los nuevos retos.
+        </p>
+        <div class="description__main--card">
+          <img src="./src/icon/icons-código-fuente-50.png" alt=""class="description__main--img"
+          />
+          <code>
+            <pre>
+<span class="morado">package</span> <span class="morado_2">main</span>
+
+<span class="morado">import</span><span class="morado_2">"fmt"</span>
+
+<span class="morado">func</span> <span class="azul">main</span>() {
+
+  <span class="morado_2">fmt</span>.<span class="azul_2">Println</span>(<span class="verde escribiendo">"My Name Is Diego Oviedo Tejada"</span><span class="cursor">|</span> )
+
+}
+</pre
+            >
+          </code>
+        </div>
+      </div>
+      <div class="description__skill">
+        <img
+          src="./src/icon/icons-css3.svg"
+          alt="icono de css"
+          class="icon__css"
+        />
+        <img
+          src="./src/icon/icons-golang.svg"
+          alt="icono de css"
+          class="icon__golang"
+        />
+        <img
+          src="./src/icon/icons-html-5.svg"
+          alt="icono de css"
+          class="icon__html"
+        />
+        <img
+          src="./src/icon/icons-javascript.svg"
+          alt="icono de css"
+          class="icon__js"
+        />
+        <img
+          src="./src/icon/icons-laravel-48.png"
+          alt="icono de css"
+          class="icon__laravel"
+        />
+        <img
+          src="./src/icon/icons-logo-de-mysql.svg"
+          alt="icono de css"
+          class="icon__mysql"
+        />
+        <img
+          src="./src/icon/icons-logo-php.svg"
+          alt="icono de css"
+          class="icon__php"
+        />
+        <img
+          src="./src/icon/icons-logotipo-de-java-coffee-cup.svg"
+          alt="icono de css"
+          class="icon__java"
+        />
+        <img
+          src="./src/icon/icons-sass.svg"
+          alt="icono de css"
+          class="icon__sass"
+        />
+      </div>
+    </section>
+
+    <section class="container" id="proyect">
+      <div class="proyect__main">
+        <h1 class="proyect__main--h1">Proyectos personales Relevantes</h1>
+        <h3 class="proyect__main--h3">(Desarrollados en distintos lenguajes)</h3>
+      </div>
+      
+    </section>
+    <section class="container black" id="contact"></section>
+  </body>
 </html>
