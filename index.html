@@ -9,14 +9,6 @@
     <script src="./src/js/main.js" defer></script>
   </head>
   <body>
-    <!-- <div class="loanding">
-    <div class="loanding__container">
-      <div class="loanding__container--img"></div>
-      <div class="loanding__container--text"></div>
-      <div class="loanding__container--animation">
-      </div>
-    </div>
-  </div> -->
     <header class="header">
       <nav class="navbar">
         <ul class="navbar__menu">
@@ -24,7 +16,7 @@
             <a class="navbar__menu--link" href="#">Home</a>
           </li>
           <li class="navbar__menu--li">
-            <a class="navbar__menu--link" href="#descrition">Descripción</a>
+            <a class="navbar__menu--link" href="#description">Descripción</a>
           </li>
           <li class="navbar__menu--li">
             <a class="navbar__menu--link" href="#proyect">Proyectos</a>
@@ -38,16 +30,17 @@
 
     <section class="container gradient">
       <div class="container__img">
-        <img src="./src/img/VECTOR DIEGO.svg" alt="" style="width: 30rem" />
+        <img src="./src/img/VECTOR DIEGO.svg" />
       </div>
       <div class="container__text">
         <span class="container__text--main">Golang | Back-End Developer</span>
         <span class="container__text--secund">Developer Junior </span>
-        <div class="container__text--animation">
+        <a href="#description" class="not__decoration"><div class="container__text--animation">
           Know Me
           <span class="container__text--animation--span"></span>
           <span class="container__text--animation--span top-1"></span>
         </div>
+      </a>
       </div>
       <img
         src="./src/img/icono-go.png"
@@ -56,7 +49,7 @@
       />
     </section>
 
-    <section class="container black" id="descrition">
+    <section class="container black" id="description">
       <div class="description__main">
         <h2 class="description__main--title">Descripción</h2>
         <p class="description__main--text">
@@ -65,7 +58,10 @@
           de sistemas, apacionado por las nuevas tecnologías y los nuevos retos.
         </p>
         <div class="description__main--card">
-          <img src="./src/icon/icons-código-fuente-50.png" alt=""class="description__main--img"
+          <img
+            src="./src/icon/icons-código-fuente-50.png"
+            alt=""
+            class="description__main--img"
           />
           <code>
             <pre>
@@ -78,8 +74,7 @@
   <span class="morado_2">fmt</span>.<span class="azul_2">Println</span>(<span class="verde escribiendo">"My Name Is Diego Oviedo Tejada"</span><span class="cursor">|</span> )
 
 }
-</pre
-            >
+</pre>
           </code>
         </div>
       </div>
@@ -132,13 +127,63 @@
       </div>
     </section>
 
-    <section class="container" id="proyect">
+    <section class="container d-column" id="proyect">
       <div class="proyect__main">
         <h1 class="proyect__main--h1">Proyectos personales Relevantes</h1>
-        <h3 class="proyect__main--h3">(Desarrollados en distintos lenguajes)</h3>
+        <h3 class="proyect__main--h3">
+          (Desarrollados en distintos lenguajes)
+        </h3>
       </div>
-      
+      <div class="proyect__container">
+        <div class="proyect__container--card">
+          <img src="./src/icon/icons-css3.svg" class="proyect__container--img" />
+          <div class="proyect__container--text">
+            <h2 class="proyect__container--title">OviMediaPlayer</h2>
+            <p class="proyect__container--p">
+              Este proyecto es una aplicación web que permite reproducir videos
+              almacenados de manera local en el pc. enfocados a las personas que
+              tengan cursos descargados y quieras ver todos los videos de manera
+              automatica.
+            </p>
+            <p class="proyect__container--link">PHP, JS, HTML, CSS</p>
+            <a href="https://github.com/DiegoOviedoT/LibreriaOviMediaplayer"><img class="proyect__container--img--link" src="./src/icon/icons8-github.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="container black" id="contact"></section>
+    <section class="container black d-column" id="contact">
+      <div class="contact__main">
+        <h1 class="contact__main--h1">Contacto</h1>
+        <h3 class="contact__main--h3">
+          (¡Diseñemos, imaginemos y creemos el próximo gran proyecto!)
+        </h3>
+      </div>
+      <div class="contact__container">
+        <div class="contact__container--form">
+          <form action="https://formsubmit.co/diegooviedo111@gmail.com" method="post">
+            <h1 class="contact__container--form--title">¡Contactame!</h1>
+            <input class="contact__container--form--input" type="text" name="name" placeholder="Nombre Completo" required/>
+            <input class="contact__container--form--input" type="email" name="email" placeholder="Correo Electronico" required />
+            <textarea class="contact__container--form--area" name="message" placeholder="Mensaje" required></textarea>
+            <button  class="contact__container--form--button" type="submit" > Enviar </button>
+          </form>
+        </div>
+        <div class="contact__container--text">
+          <div class="contact__container--social">
+            <p class="contact__container--social--title">Redes Sociales</p>
+            <a href="https://www.linkedin.com/in/diego-oviedo-tejada-232975183/"><img src="./src/icon/icons-linkedin.svg" alt="Icono de linkedin" ></a>
+            <a href="https://github.com/DiegoOviedoT"><img src="./src/icon/icons-github.svg" alt="Icono de github"></a>
+            <a href="https://www.instagram.com/diegooviedomusic/"><img src="./src/icon/icons-instagram.svg" alt="Icono de Instagram"></a>
+          </div>
+        </div>
+        <div class="donwload__curriculum">
+          <img src="./src/icon/icons-donwload.svg" alt="icono de descarga">
+          Descargar Curriculum
+        </div>
+      </div>
+      <div class="footer__content">
+        &copy; This page was designed & programmed by Diego Oviedo
+      </div>
+    </section>
   </body>
 </html>
