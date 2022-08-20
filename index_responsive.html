@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Diego Oviedo Tejada</title>
+  <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+  <script src="./src/js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <span class="navbar__nombre">DO</span>
+      <ul class="navbar__menu hidden" id="menu">
+        <li class="navbar__menu--li">
+          <a class="navbar__menu--link" href="#">
+            <span class="navbar__menu--link--icon active"> <ion-icon name="person-outline"></ion-icon></span>
+            <span class="navbar__menu--link--text active">Home</span>
+          </a>
+        </li>
+        <li class="navbar__menu--li">
+          <a class="navbar__menu--link" href="#description">
+            <span class="navbar__menu--link--icon"><ion-icon name="document-text-outline"></ion-icon></span>
+            <span class="navbar__menu--link--text">Descripción</span>
+          </a>
+        </li>
+        <li class="navbar__menu--li">
+          <a class="navbar__menu--link" href="#proyect">
+            <span class="navbar__menu--link--icon"><ion-icon name="terminal-outline"></ion-icon></span>
+            <span class="navbar__menu--link--text">Proyectos</span>
+          </a>
+        </li>
+        <li class="navbar__menu--li">
+          <a class="navbar__menu--link" href="#contact">
+            <span class="navbar__menu--link--icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+            <span class="navbar__menu--link--text">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="row pt-5">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="profile__img">
+          <div class="profile__img--photo">
+            <span class="profile__img--photo--marco">
+              <img class="img-fluid" src="./src/img/Foto Diego.jpeg" />
+            </span>
+        </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="profile__text">
+          <span class="profile__text--main">Golang | Back-End Developer</span>
+          <span class="profile__text--secund">Developer Junior </span>
+          <a href="#description" class="profile__text--link"><div class="profile__text--animation">
+            Know Me
+            <span class="profile__text--animation--span"></span>
+            <span class="profile__text--animation--span--top"></span>
+          </div>
+        </a>
+        </div>
+      </div>
+      <img src="./src/img/icono-go.png" alt="icono de la mascota de Golang" class="profile__golang"/>
+    </div>
+  </section>
+
+  <section class="container-fluid black" id="description">
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="description__main">
+          <h2 class="description__main--title">Descripción</h2>
+          <p class="description__main--text">
+            Ingeniero y desarrollador de software con experiencia en desarrollo de
+            aplicaciones web y back-end, con formación Universitaria en ingenieria
+            de sistemas, apacionado por las nuevas tecnologías y los nuevos retos.
+          </p>
+          <div class="description__main--card">
+            <code>
+              <pre>
+    <span class="morado">package</span> <span class="morado_2">main</span>
+
+    <span class="morado">import</span><span class="morado_2">"fmt"</span>
+
+    <span class="morado">func</span> <span class="azul">main</span><span class="white">() {</span>
+      <span class="morado_2">fmt</span>.<span class="azul_2">Println</span><span class="white">(</span><span class="verde escribiendo">"Ingeniero Profesional"</span><span class="cursor white">|</span><span class="white">)</span>
+    <span class="white">}</span>
+    </pre>
+            </code>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="description__skill">
+          <img
+            src="./src/icon/icons-css3.svg"
+            alt="icono de css"
+            class="icon__css"
+          />
+          <img
+            src="./src/icon/icons-golang.svg"
+            alt="icono de css"
+            class="icon__golang"
+          />
+          <img
+            src="./src/icon/icons-html-5.svg"
+            alt="icono de css"
+            class="icon__html"
+          />
+          <img
+            src="./src/icon/icons-javascript.svg"
+            alt="icono de css"
+            class="icon__js"
+          />
+          <img
+            src="./src/icon/icons-laravel-48.png"
+            alt="icono de css"
+            class="icon__laravel"
+          />
+          <img
+            src="./src/icon/icons-logo-de-mysql.svg"
+            alt="icono de css"
+            class="icon__mysql"
+          />
+          <img
+            src="./src/icon/icons-logo-php.svg"
+            alt="icono de css"
+            class="icon__php"
+          />
+          <img
+            src="./src/icon/icons-logotipo-de-java-coffee-cup.svg"
+            alt="icono de css"
+            class="icon__java"
+          />
+          <img
+            src="./src/icon/icons-sass.svg"
+            alt="icono de css"
+            class="icon__sass"
+          />
+        </div>
+    </div>
+  </section>
+
+  <section class="container" id="proyect">
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="proyect__main">
+          <h1 class="proyect__main--h1">Proyectos personales Relevantes</h1>
+          <h3 class="proyect__main--h3">
+            (Desarrollados en distintos lenguajes)
+          </h3>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="proyect__container">
+          <div class="proyect__container--card">
+            <img src="./src/icon/icons-css3.svg" class="proyect__container--img" />
+            <div class="proyect__container--text">
+              <h2 class="proyect__container--title">OviMediaPlayer</h2>
+              <p class="proyect__container--p">
+                Este proyecto es una aplicación web que permite reproducir videos
+                almacenados de manera local en el pc. enfocados a las personas que
+                tengan cursos descargados y quieras ver todos los videos de manera
+                automatica.
+              </p>
+              <p class="proyect__container--link">PHP, JS, HTML, CSS</p>
+              <a href="https://github.com/DiegoOviedoT/LibreriaOviMediaplayer"><img class="proyect__container--img--link" src="./src/icon/icons8-github.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="proyect__container--card">
+            <img src="./src/icon/icons-css3.svg" class="proyect__container--img" />
+            <div class="proyect__container--text">
+              <h2 class="proyect__container--title">OviMediaPlayer</h2>
+              <p class="proyect__container--p">
+                Este proyecto es una aplicación web que permite reproducir videos
+                almacenados de manera local en el pc. enfocados a las personas que
+                tengan cursos descargados y quieras ver todos los videos de manera
+                automatica.
+              </p>
+              <p class="proyect__container--link">PHP, JS, HTML, CSS</p>
+              <a href="https://github.com/DiegoOviedoT/LibreriaOviMediaplayer"><img class="proyect__container--img--link" src="./src/icon/icons8-github.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="proyect__container--card">
+            <img src="./src/icon/icons-css3.svg" class="proyect__container--img" />
+            <div class="proyect__container--text">
+              <h2 class="proyect__container--title">OviMediaPlayer</h2>
+              <p class="proyect__container--p">
+                Este proyecto es una aplicación web que permite reproducir videos
+                almacenados de manera local en el pc. enfocados a las personas que
+                tengan cursos descargados y quieras ver todos los videos de manera
+                automatica.
+              </p>
+              <p class="proyect__container--link">PHP, JS, HTML, CSS</p>
+              <a href="https://github.com/DiegoOviedoT/LibreriaOviMediaplayer"><img class="proyect__container--img--link" src="./src/icon/icons8-github.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid black" id="contact">
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="contact__main">
+          <h1 class="contact__main--h1">Contacto</h1>
+          <h3 class="contact__main--h3">
+            (¡Diseñemos, imaginemos y creemos el próximo gran proyecto!)
+          </h3>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="contact__container">
+          <div class="contact__container--form">
+            <form action="https://formsubmit.co/diegooviedo111@gmail.com" method="post">
+              <h1 class="contact__container--form--title">¡Contactame!</h1>
+              <input class="contact__container--form--input" type="text" name="name" placeholder="Nombre Completo" required/>
+              <input class="contact__container--form--input" type="email" name="email" placeholder="Correo Electronico" required />
+              <textarea class="contact__container--form--area" name="message" placeholder="Mensaje" required></textarea>
+              <button  class="contact__container--form--button" type="submit" > Enviar </button>
+            </form>
+          </div>
+          <div class="contact__container--text">
+            <div class="contact__container--social">
+              <p class="contact__container--social--title">Redes Sociales</p>
+              <a href="https://www.linkedin.com/in/diego-oviedo-tejada-232975183/"><img src="./src/icon/icons-linkedin.svg" alt="Icono de linkedin" ></a>
+              <a href="https://github.com/DiegoOviedoT"><img src="./src/icon/icons-github.svg" alt="Icono de github"></a>
+            </div>
+          </div>
+          <div class="donwload__curriculum">
+            <img src="./src/icon/icons-donwload.svg" alt="icono de descarga">
+            Descargar Curriculum
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        &copy; This page was designed & programmed by Diego Oviedo
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
