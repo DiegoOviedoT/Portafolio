@@ -22,15 +22,10 @@
   align-items: center;
 
   &__nombre{
-    display: block;
-    color: #ffffff;
-    font-size: 1rem;
-    width: 2rem;
-    height: 2rem;
-    line-height: 1.9;
-    border-radius: 50%;
-    background-color: #009d5c;
-    text-align: center;
+    position: relative;
+    top: -1rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   &__menu {
@@ -113,42 +108,11 @@
 
     &--photo{
       position: relative;
-      width: 12rem;
-      height: 15.8rem;
+      width: 0rem;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      border-radius: .7rem;
-      box-shadow: 0px 2px 10px 0 #000000;
-
-      &::after{
-        content: "";
-        position: absolute;
-        width: 38rem;
-        height: 38rem;
-        background-image: conic-gradient(transparent,transparent,transparent,#06ccef);
-        animation: rotar 8s linear infinite;
-        animation-delay: -4s;
-      }
-
-      &::before{
-        content: "";
-        position: absolute;
-        width: 37rem;
-        height: 37rem;
-        background-image: conic-gradient(transparent,transparent,transparent,#06ccef);
-        animation: rotar 8s linear infinite;
-      }
-      &--marco{
-        position: absolute;
-        inset: .2rem;
-        z-index: 10;
-        border-radius: 1.8rem;
-        & > img{
-          border-radius: 10px;
-        }
-      }
     }
 
   }
@@ -157,7 +121,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #00919e;
+    color: #74cddd;
     font-size: 1.2rem;
     height: 14rem;
 
@@ -173,6 +137,11 @@
     &--link {
       text-decoration: none;
       color: #000000;
+
+      &:hover{
+        text-decoration: none;
+        color: #000000;
+      }
     }
 
     &--animation {
@@ -184,7 +153,6 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      text-decoration: none;
       animation: moves 2s ease infinite;
 
       &::after {
@@ -747,3 +715,82 @@ body::-webkit-scrollbar-track {
   width: 10rem;
 }
 
+.loading{
+  width:100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+  &__img{
+    width: 10rem;
+
+    &--o{
+      opacity: 0;
+      animation: translateO 2.5s ease-out ;
+      animation-fill-mode: forwards;
+    }
+
+    &--d{
+      opacity: 0;
+      animation: translateD 2.5s ease-out;
+      animation-fill-mode: forwards;
+    }
+
+    &--cejas{
+      opacity: 0;
+      animation: showCejas 1s ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 2400ms;
+    }
+
+    &--soporte{
+      opacity: 0;
+      animation: showSoporte 1s ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 2400ms;
+    }
+  }
+}
+
+@keyframes showSoporte{
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes showCejas{
+  100%{opacity: 1;}
+}
+
+@keyframes translateO{
+  0%{
+    transform: translateX(33rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-6rem);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes translateD{
+  0%{
+    transform: translate(-33rem,47rem) rotate(-90deg);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(4rem,47rem) rotate(-90deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
