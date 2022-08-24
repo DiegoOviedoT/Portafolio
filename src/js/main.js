@@ -51,8 +51,8 @@ let idInterval = setInterval(loadingDocument, 2550);
 
 
 window.onload = () => {
-  setInterval(()=>{
-  clearInterval(this);
+  let id = setInterval(()=>{
+  clearInterval(id);
   clearInterval(idInterval);
   document.getElementById("loading").style.display = "none";
   document.getElementById("header").removeAttribute("style");
@@ -60,6 +60,7 @@ window.onload = () => {
   document.getElementById("description").removeAttribute("style");
   document.getElementById("proyect").removeAttribute("style");
   document.getElementById("contact").removeAttribute("style");
+  console.log("termino");
   }, 4000);
 };
 
@@ -69,7 +70,7 @@ const golangMessage = document.querySelector(".profile__golang--message");
 golang.addEventListener("touchstart", (e) => {
   e.preventDefault();
   e.style = "transform: translateX(-100%) scale(.9)";
-  golangMessage.classList.toggle("showMessage");
+  golangMessage.classList.toggle("hiddenMessage");
 });
 
 golang.addEventListener("click", (e) => {
