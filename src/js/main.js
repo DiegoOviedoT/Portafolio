@@ -49,7 +49,10 @@ const loadingDocument = () => {
 
 let idInterval = setInterval(loadingDocument, 2550);
 
+
 window.onload = () => {
+  setInterval(()=>{
+  clearInterval(this);
   clearInterval(idInterval);
   document.getElementById("loading").style.display = "none";
   document.getElementById("header").removeAttribute("style");
@@ -57,6 +60,7 @@ window.onload = () => {
   document.getElementById("description").removeAttribute("style");
   document.getElementById("proyect").removeAttribute("style");
   document.getElementById("contact").removeAttribute("style");
+  }, 4000);
 };
 
 const golang = document.getElementById("golang");
