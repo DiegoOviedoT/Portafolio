@@ -70,6 +70,6 @@ golang.addEventListener("touchstart", (e) => {
 
 golang.addEventListener("click", (e) => {
   e.preventDefault();
-  e.style = "transform: translateX(-100%) scale(.9)";
-  golangMessage.classList.toggle("showMessage");
+  e.style = "transform: translateX(-100%) scale(1)";
+  golangMessage.classList.toggle("hiddenMessage");
 });
