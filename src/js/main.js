@@ -22,16 +22,6 @@ const observer = new IntersectionObserver((entries) => {
 }, options);
 
 links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    document
-      .querySelector(".navbar__menu--link--icon.active")
-      .classList.remove("active");
-    document
-      .querySelector(".navbar__menu--link--text.active")
-      .classList.remove("active");
-    e.target.childNodes[1].classList.add("active");
-    e.target.childNodes[3].classList.add("active");
-  });
   const hash = link.getAttribute("href");
   const target = document.querySelector(hash);
   if (target) {
@@ -60,7 +50,6 @@ window.onload = () => {
   document.getElementById("description").removeAttribute("style");
   document.getElementById("proyect").removeAttribute("style");
   document.getElementById("contact").removeAttribute("style");
-  console.log("termino");
   }, 4000);
 };
 
